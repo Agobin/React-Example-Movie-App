@@ -1,0 +1,59 @@
+.app {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.content {
+  min-height: 70%vh;
+}
+
+.header-menu {
+  list-style-type: none;
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  padding: 0;
+}
+
+.header-menu a {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 10px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.header-menu a:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.footer {
+  background: #000000;
+}
+
+.footer-text {
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+.movies-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.movie-card {
+}
+
+.movie-poster {
+  max-height: 200px;
+  cursor: pointer;
+}
+
+.no-liked-movies-found {
+  text-align: center;
+  font-weight: bold;
+}
