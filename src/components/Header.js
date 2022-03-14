@@ -19,17 +19,4 @@ const Header = () => {
   );
 };
 
-/*
-
-      <Nav>
-        <NavLink exact={true} activeClassName='is-active' to='/'>Home</NavLink>
-        <NavLink activeClassName='is-active' to='/about'>About</NavLink>
-      </Nav>
-
-      <Match pattern='/' exactly component={Home} />
-      <Match pattern='/about' exactly component={About} />
-      <Miss component={NoMatch} />
-
-*/
-
 export default Header;
