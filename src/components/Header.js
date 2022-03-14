@@ -6,12 +6,16 @@ const Header = () => {
       <ul className="header-menu">
         <li>
           <Link to="/">
-            <a href="/">Home</a>
+            <a className="header-link" href="/">
+              Home
+            </a>
           </Link>
         </li>
         <li>
           <Link to="/liked">
-            <a href="/liked">Liked Movies</a>
+            <a className="header-link" href="/liked">
+              Liked Movies
+            </a>
           </Link>
         </li>
       </ul>

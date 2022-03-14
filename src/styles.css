@@ -22,15 +22,15 @@ body {
   margin-top: 0;
 }
 
-.header-menu a {
+.header-menu a.header-link {
   display: inline-block;
   margin-right: 10px;
-  padding: 10px;
+  padding: 20px 10px;
   color: #ffffff;
   text-decoration: none;
 }
 
-.header-menu a:hover {
+.header-menu a.header-link:hover {
   color: #000000;
   background-color: #ffffff;
 }
