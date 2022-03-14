@@ -4,7 +4,7 @@
 }
 
 .content {
-  min-height: 70%vh;
+  min-height: 70vh;
 }
 
 .header-menu {
@@ -30,6 +30,7 @@
 
 .footer {
   background: #000000;
+  margin-top: 10px;
 }
 
 .footer-text {
@@ -45,15 +46,12 @@
   justify-content: space-between;
 }
 
-.movie-card {
-}
-
 .movie-poster {
   max-height: 200px;
   cursor: pointer;
 }
 
-.no-liked-movies-found {
-  text-align: center;
+.no-liked-movies-found-text {
+  margin: auto;
   font-weight: bold;
 }

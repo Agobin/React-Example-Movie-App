@@ -10,15 +10,12 @@ const MoviesLiked = observer(() => {
 
   let likedMovies = movieStore.movies.filter((m) => m.liked);
 
-  console.log("Liked:", likedMovies);
   return (
     <>
       {movieStore.isLoading && <h2>Loading movies...</h2>}
 
       {!movieStore.isLoading && (
         <>
-          <h1 className="movie-header">Liked Movies</h1>
-
           <div className="movies-container">
             {likedMovies.length > 0 &&
               likedMovies.map((movie, index) => {
@@ -34,7 +31,7 @@ const MoviesLiked = observer(() => {
               })}
 
             {!likedMovies.length && (
-              <div className="no-liked-movies-found">
+              <div className="no-liked-movies-found-text">
                 Like movies for them to appear here
               </div>
             )}

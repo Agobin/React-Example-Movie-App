@@ -14,7 +14,6 @@ const MoviesList = observer(() => {
 
       {!movieStore.isLoading && (
         <>
-          <h1>Movies List</h1>
           <div className="movies-container">
             {movieStore.movies.map((movie, index) => {
               return (
@@ -31,7 +30,6 @@ const MoviesList = observer(() => {
               );
             })}
           </div>
-          <h5>Movies count: {movieStore.movies.length}</h5>
         </>
       )}
     </>
