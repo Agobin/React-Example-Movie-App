@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 .app {
   font-family: sans-serif;
   text-align: center;
@@ -5,6 +9,8 @@
 
 .content {
   min-height: 70vh;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .header-menu {
@@ -13,6 +19,7 @@
   color: #ffffff;
   display: flex;
   padding: 0;
+  margin-top: 0;
 }
 
 .header-menu a {
@@ -43,12 +50,32 @@
 .movies-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .movie-poster {
   max-height: 200px;
+}
+
+.movie-card {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-card:hover {
+  box-shadow: 0px 0px 14px 6px #000000;
+}
+
+.movie-card .action-area {
   cursor: pointer;
+  padding: 5px;
+  background: #ff0000;
+}
+
+.movie-card .action-area.liked-movie {
+  cursor: pointer;
+  background: #00ff00;
 }
 
 .no-liked-movies-found-text {

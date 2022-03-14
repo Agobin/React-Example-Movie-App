@@ -1,7 +1,8 @@
 import React from "react";
 import { observer } from "mobx-react";
-import { movieStore } from "../store/MovieStore";
 import { useEffect } from "react";
+import { movieStore } from "../store/MovieStore";
+import MoviesPoster from "./MoviePoster";
 
 const MoviesLiked = observer(() => {
   useEffect(() => {
@@ -19,15 +20,7 @@ const MoviesLiked = observer(() => {
           <div className="movies-container">
             {likedMovies.length > 0 &&
               likedMovies.map((movie, index) => {
-                return (
-                  <div key={index} className="movie-card">
-                    <img
-                      className="movie-poster"
-                      src={movie.poster}
-                      alt={movie.title}
-                    />
-                  </div>
-                );
+                return <MoviesPoster movie={movie} />;
               })}
 
             {!likedMovies.length && (

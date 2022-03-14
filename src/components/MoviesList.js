@@ -2,6 +2,7 @@ import React from "react";
 import { observer } from "mobx-react";
 import { movieStore } from "../store/MovieStore";
 import { useEffect } from "react";
+import MoviesPoster from "./MoviePoster";
 
 const MoviesList = observer(() => {
   useEffect(() => {
@@ -15,19 +16,8 @@ const MoviesList = observer(() => {
       {!movieStore.isLoading && (
         <>
           <div className="movies-container">
-            {movieStore.movies.map((movie, index) => {
-              return (
-                <div key={index} className="movie-card">
-                  <img
-                    className="movie-poster"
-                    src={movie.poster}
-                    alt={movie.title}
-                    onClick={() => {
-                      movieStore.toggleLike(movie.id);
-                    }}
-                  />
-                </div>
-              );
+            {movieStore.movies.map((movie) => {
+              return <MoviesPoster movie={movie} />;
             })}
           </div>
         </>
